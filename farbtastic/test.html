@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <!--[if IE]><script type="text/javascript" src="http://explorercanvas.googlecode.com/svn/tags/m3/excanvas.compiled.js"></script><![endif]-->
+	<title>Farbtastic v2</title>
+
+</head>
+
+<body>
+  
+  	<script type="text/javascript" charset="utf-8" src="src/farbtastic.js"></script>
+	<script type="text/javascript" charset="utf-8">
+	 $(function () {
+	   $('#colorpicker2').farbtastic({ callback: '#color2', width: 120 });
+	 });
+	</script>
+
+
+<div class="colorpicker">
+  <div id="colorpicker2"></div>
+  <form><input type="text" id="color2" /></form>
+</div>
+
+<p><a href="http://acko.net/">› Acko.net</a></p>
+</body>
+</html>
+
