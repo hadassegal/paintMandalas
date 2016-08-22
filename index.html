@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<title>Mandala Painter</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<!--<link rel="stylesheet" href="farbtastic/farbtastic.css" type="text/css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+		<script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+	</head>
+	<body>
+
+		<div id="header">
+			<h2>Mandala Painter</h2>
+		</div>
+		<div id="container">
+			<div id="content">
+				<div id="nav">
+					<h3>ToolBox</h3>
+					<div id="pen_controls">
+						<p id="width_controls">
+							Width:
+							<input type="text" id="line_width" value="2" , onchange="setLineWidth()">
+						</p>
+					</div>
+					<div class="colorpicker2">
+					<ul>
+						<li><form>Color:<input type="text" id="color" value="#0f8b76"/></form></li>
+					</ul>
+						<div id="colorpicker">color picker</div>
+					  	<script type="text/javascript" charset="utf-8" src="farbtastic/src/farbtastic.js"></script>
+						<script type="text/javascript" charset="utf-8">
+						 $(function () {
+						   $('#colorpicker').farbtastic({ callback: '#color', width: 110 });
+						 });
+						</script>
+					</div><br>
+					  
+
+					<div id="mandala_controls">
+						<p id ="mandala">
+							Mandala:
+							<input type="text" id="mandala_mirrors" value="20" class="number", onchange="setMirrors()">
+						</p>
+					</div>
+					<ul>
+						<li><a id="new_origin" href="#" onclick="setOrigin()">New Origin</a></li>
+						<li><a id="center_origin" href="#" onclick="centerOrigin()">Center Origin</a></li>
+						<li>Show Grid</li>
+					</ul>
+					<ul>
+						<li>undo</li>
+						<li>redo</li>
+					</ul>
+					<ul>
+						<li><a id="clear" href="#" onclick="clearCanvas()">Clear</a></li>
+						<li>Save</li>
+					</ul>
+				</div>
+
+				<div id="main"  style='margin: 0;'>
+					<!--<h2>Mandala Painter</h2>-->
+
+				<!--<a href="#" onclick="clear()"><div id="canvas_img" > </div></a>-->
+
+					<!--<p>Click to start painting!</p>-->
+					<canvas id="canvas">Sorry, your browser is rubbish</canvas>
+					<script src="main.js"></script>
+
+				</div>
+
+			</div>
+		</div>
+		
+			<div id = "footer">
+				Copyright &copy; 2016 Hadas Segal
+			</div>
+	</body>
+</html>
